@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MENU START */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #ffffff;
+    box-shadow:  28px 28px 56px #747474,
+    -28px -28px 56px #ffffff;
+
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1e90ff;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: #1e90ff;
+}
+
+.menu .active {
+    background: #e3f2fd;
+    padding: 8px 14px;
+    border-radius: 8px;
+}
+
+/* CONTACT */
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.phone {
+    font-weight: 600;
+    color: #333;
+}
+
+.btn {
+    background: orange;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: darkorange;
+}
+/* MENU END */
+
+
+  
+
+/* fon down menu  */
+.bacraun-fon{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.fon{
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* кадрга туура келиши үчүн */
+}
+
+.blue-text{
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
+    margin-top: -179px;
+    margin-left: 491px;
+}
+.blue-text span{
+    color: #1e90ff;
+}
+
+/* fon down menu end  */
+
+
+
+
+
+/*  <!-- header-fon -->  */
+ 
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-box {
+    width: 650px;
+    background: #f3f3f3;
+    padding: 5px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 18px 25px;
+    font-size: 18px;
+    border-radius: 60px;
+}
+
+.search-btn {
+    background: #ff9800;
+    border: none;
+    padding: 18px 40px;
+    border-radius: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+    background: #e68900;
+}
+/* <!-- header-fon  end--> */
+
+
+
+
+
+
+
+
+/* slider */
+.container h2{
+    text-align: center;
+    color: #5204ff;
+}
+.row {
+    display: flex;
+    flex-wrap: nowrap; /* Карталардын төмөн түшүп кетишине жол бербейт */
+}
+
+.price span{
+    color: #ff9800;
+}
+
+.col-3 {
+    flex: 0 0 25%; 
+    max-width: 25%;
+    padding: 0 10px; 
+}
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.9s;
+}
+
+.card:hover {
+    transform: scale(0.9);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    object-position: center; 
+}
+
+
+/* BTN */
+.btn-Details button{
+    margin-left: 172px;
+    margin-top: -102px;
+    padding-right: 2px;
+}
+
+.btn-Details button:hover{
+    color: #e63d00;
+    background-color: #1e90ff;
+}
+
+
+.margin-top{
+    margin-top: 40px;
+}
+/* Мобилдик версияда телефондун экранына тууралоо */
+@media (max-width: 992px) {
+    .col-3 {
+        flex: 0 0 50%; /* Планшетте 2ден көрүнөт */
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-3 {
+        flex: 0 0 100%; /* Телефондо 1ден көрүнөт */
+        max-width: 100%;
+    }
+}
+
+
+
+/* slider end */
+
+
+
+
+
+/* <!-- down туйундогу кара  --> */
+.footer {
+    background: #2d2d2d;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.footer h3 {
+    margin-bottom: 20px;
+    color: #00bfff;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 8px;
+}
+
+.footer ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #00bfff;
+}
+
+.certificates {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.certificates img {
+    width: 80px;
+    border-radius: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #555;
+    margin: 40px 0;
+}
+
+.copyright {
+    text-align: center;
+    color: #aaa;
+}
