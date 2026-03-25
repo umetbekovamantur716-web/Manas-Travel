@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Manas Travel</title>
 </head>
@@ -15,247 +15,357 @@
 
     <header class="navbar">
         <div class="logo">
-            <img src="https://png.pngtree.com/png-clipart/20231206/original/pngtree-worldwide-traveling-plane-photo-png-image_13777643.png" alt="">
             <span>Manas Travel</span>
         </div>
     
         <nav>
             <ul class="menu">
                 <li><a href="#" class="active">Главная</a></li>
-                <li><a href="#">Туры</a></li>
+                <li><a href="all-tours.html">Туры</a></li>
                 <li><a href="#"> Каталог </a></li>
                 <li><a href="#">Направление</a></li>
                 <li><a href="#">О компании</a></li>
                 <li><a href="#">Контакты</a></li>
             </ul>
         </nav>
-    
-        <div class="contact">
-            <span  class="phone"> <a href="#">📞 +996 555 123 456</a></span>
-            <button class="btn">Оставьте заявку</button>
-            <!-- meny end -->
+  
+        <div class="contacto">
+            <div class="contact">
+                <form class="d-flex align-items-center gap-2" role="search">
+                    <input class="form-control form-control-lg" type="search" placeholder="Поиск туров..." aria-label="Search">
+                    <button class="btn btn-warning btn-lg" type="submit"> Найти</button>
+                </form>
+            </div>
+            
         </div>
     </header>
+    <!-- meny end -->
      
 
+<!-- header fon start-->
+<div id="headerSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-    
-<!-- fon down menu -->
-
-    <div class="section">
-     <div class="bacraun-fon">
-        <img class="fon" src="https://sputnik.kg/img/102773/07/1027730790_0:141:3712:2475_1920x0_80_0_0_89487f8775e7adcf8568377d935c62b5.jpg" alt="">
-     </div>
-     <p class="blue-text">Открой Мир с  <span> Manas Trevel! </span> </p>
+    <!-- Индикаторлор -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#headerSlider" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#headerSlider" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#headerSlider" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#headerSlider" data-bs-slide-to="3"></button>
     </div>
+  
+    <!-- Слайды -->
+    <div class="carousel-inner">
+  
+      <!-- 1 -->
+      <div class="carousel-item active" style="height:450px; background:url('https://images.unsplash.com/photo-1528127269322-539801943592?w=1400') center/cover no-repeat;">
+        <div class="overlay d-flex align-items-center">
+          <div class="text-slide" style="left:50px; bottom:50px;">
+            <span class="badge bg-danger">🔥 Горящий тур!</span>
+            <h2>Пляжный отдых на озере Сары-Челек</h2>
+            <p>Белый песок, кристально чистая вода, идеальный отдых всей семьи.</p>
+            <h4>Туры от 450$</h4>
+            <div class="btn-group">
+              <a href="#tours" class="btn btn-warning">Подробнее</a>
+              <a href="#booking" class="btn btn-info text-white">Оставить заявку</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
 
-<!-- fon down menu end-->
+      <!-- 2 -->
+      <div class="carousel-item active" style="height:450px; background:url('https://images.unsplash.com/photo-1528127269322-539801943592?w=1400') center/cover no-repeat;">
+        <div class="overlay d-flex align-items-center">
+          <div class="text-slide" style="left:50px; bottom:50px;">
+            <span class="badge bg-danger">🔥 Горящий тур!</span>
+            <h2>Пляжный отдых на озере Сары-Челек</h2>
+            <p>Белый песок, кристально чистая вода, идеальный отдых всей семьи.</p>
+            <h4>Туры от 450$</h4>
+            <div class="btn-group">
+              <a href="#tours" class="btn btn-warning">Подробнее</a>
+              <a href="#booking" class="btn btn-info text-white">Оставить заявку</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
-<!-- header-fon -->
- 
-<div class="search-bar">
-    <div class="search-box">
-
-        <input type="text" placeholder="Куда поедем?" />
-
-        <button class="search-btn">
-            Найти тур
-        </button>
-
+      <!-- 3 -->
+      <div class="carousel-item" style="height:450px; background:url('https://images.unsplash.com/photo-1526772662000-3f88f10405ff') center/cover no-repeat;">
+        <div class="overlay d-flex align-items-center">
+          <div class="text-slide" style="left:50px; top:100px;">
+            <span class="badge bg-warning">🎁 Подарок включен</span>
+            <h2>Природный тур по ущельям Кыргызстана</h2>
+            <p>Незабываемые впечатления, профессиональный гид и уютные домики.</p>
+            <h4>Туры от 250$</h4>
+            <div class="btn-group">
+              <a href="#tours" class="btn btn-warning">Подробнее</a>
+              <a href="#booking" class="btn btn-info text-white">Оставить заявку</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- 4 -->
+      <div class="carousel-item" style="height:450px; background:url('https://images.unsplash.com/photo-1526772662000-3f88f10405ff') center/cover no-repeat;">
+        <div class="overlay d-flex align-items-center">
+          <div class="text-slide" style="left:50px; top:100px;">
+            <span class="badge bg-warning">🎁 Подарок включен</span>
+            <h2>Природный тур по ущельям Кыргызстана</h2>
+            <p>Незабываемые впечатления, профессиональный гид и уютные домики.</p>
+            <h4>Туры от 250$</h4>
+            <div class="btn-group">
+              <a href="#tours" class="btn btn-warning">Подробнее</a>
+              <a href="#booking" class="btn btn-info text-white">Оставить заявку</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
     </div>
-</div>
-       
+  
+    <!-- Кнопкалар -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#headerSlider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" style="background-color: rgba(0,0,0,0.4); border-radius:50%;"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#headerSlider" data-bs-slide="next">
+      <span class="carousel-control-next-icon" style="background-color: rgba(0,0,0,0.4); border-radius:50%;"></span>
+    </button>
+  
+  </div>
 <!-- header-fon  end-->
 
-
-
-
-<!-- slider  -->  
-<div class="container my-5">
-    <h2 class="mb-4">Популярдуу багыттар</h2>
-
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            
-            <div class="carousel-item active">
-                <div class="row">
-                    <div class="col-3">
-                        <div class="card">
-                            <img src="https://cdn.ingos.ru/images/blog/samye-vysokie-gory-v-mire.jpg" class="card-img-top" alt="Турция">
-                            <div class="card-body">
-                                <h5 class="card-title">Турция</h5>
-                                <p class="price">от <span>29 900</span> COM</p>
-                                <a class="btn-Details" href="#">
-                                    <button type="button" class="btn btn-primary">Подробнее</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card">
-                            <img src="https://www.kovinov.com/biblioteka/gory-mira/gimalai.jpg" class="card-img-top" alt="ОАЭ">
-                            <div class="card-body">
-                                <h5 class="card-title">ОАЭ</h5>
-                                <p class="price">от <span>55 000</span> COM</p>
-                                <a class="btn-Details" href="#">
-                                    <button type="button" class="btn btn-primary">Подробнее</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card">
-                            <img src="https://sputnik.kg/img/102080/70/1020807064_0:0:3888:2592_600x0_80_0_1_5077b09cafb558b3ad259ab169eb769e.jpg" class="card-img-top" alt="Таиланд">
-                            <div class="card-body">
-                                <h5 class="card-title">Таиланд</h5>
-                                <p class="price">от <span>48 000</span> COM</p>
-                                <a class="btn-Details" href="#">
-                                    <button type="button" class="btn btn-primary">Подробнее</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card">
-                            <img src="https://t3.ftcdn.net/jpg/00/75/82/52/360_F_75825293_EmDAD2I0aNMpyOq0IFwFzRhvRxQbHTyL.jpg" class="card-img-top" alt="Мальдивы">
-                            <div class="card-body">
-                                <h5 class="card-title">Мальдивы</h5>
-                                <p class="price">от <span>75 000</span> COM</p>
-                                <a class="btn-Details" href="#">
-                                    <button type="button" class="btn btn-primary">Подробнее</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-</div>
-<!-- slider end 1  --> 
-
-
-<!-- slider  start 2--> 
  
-<div class="margin-top">
+<!-- поиск  -->
 
-<div class="container mt-5  my-5"  >
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            
-            <div class="carousel-item active">
-                <div class="row">
-                    <div class="col-3">
-                        <div class="card">
-                            <img src="https://cdn.ingos.ru/images/blog/samye-vysokie-gory-v-mire.jpg" class="card-img-top" alt="Турция">
-                            <div class="card-body">
-                                <h5 class="card-title">Турция</h5>
-                                <p class="price">от <span>29 900</span> COM</p>
-                                <a class="btn-Details" href="#">
-                                    <button type="button" class="btn btn-primary">Подробнее</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card">
-                            <img src="https://www.kovinov.com/biblioteka/gory-mira/gimalai.jpg" class="card-img-top" alt="ОАЭ">
-                            <div class="card-body">
-                                <h5 class="card-title">ОАЭ</h5>
-                                <p class="price">от <span>55 000</span> COM</p>
-                                <a class="btn-Details" href="#">
-                                    <button type="button" class="btn btn-primary">Подробнее</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card">
-                            <img src="https://sputnik.kg/img/102080/70/1020807064_0:0:3888:2592_600x0_80_0_1_5077b09cafb558b3ad259ab169eb769e.jpg" class="card-img-top" alt="Таиланд">
-                            <div class="card-body">
-                                <h5 class="card-title">Таиланд</h5>
-                                <p class="price">от <span>48 000</span> COM</p>
-                                <a class="btn-Details" href="#">
-                                    <button type="button" class="btn btn-primary">Подробнее</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card">
-                            <img src="https://t3.ftcdn.net/jpg/00/75/82/52/360_F_75825293_EmDAD2I0aNMpyOq0IFwFzRhvRxQbHTyL.jpg" class="card-img-top" alt="Мальдивы">
-                            <div class="card-body">
-                                <h5 class="card-title">Мальдивы</h5>
-                                <p class="price">от <span>75 000</span> COM</p>
-                                <a class="btn-Details" href="#">
-                                    <button type="button" class="btn btn-primary">Подробнее</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+<div class="container mt-5">
+    <div class="search-filter-card p-4 shadow-sm">
+        <h4 class="mb-4">🔍 Тур издөө</h4>
+        
+        <form class="row g-3">
+            <div class="col-md-3">
+                <label class="form-label small fw-bold">Каякка?</label>
+                <select class="form-select border-0 bg-light">
+                    <option selected>Өлкөнү тандаңыз</option>
+                    <option value="1">Турция</option>
+                    <option value="2">Египет</option>
+                    <option value="3">ОАЭ</option>
+                    <option value="4">Таиланд</option>
+                </select>
+            </div>
 
+            <div class="col-md-3">
+                <label class="form-label small fw-bold">Эс алуу түрү</label>
+                <select class="form-select border-0 bg-light">
+                    <option selected>Тандаңыз</option>
+                    <option>Пляж</option>
+                    <option>Тоо</option>
+                    <option>Экскурсия</option>
+                </select>
+            </div>
+
+            <div class="col-md-3">
+                <label class="form-label small fw-bold">Учуу шаары</label>
+                <div class="d-flex align-items-center mt-2 gap-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="city" id="bishkek" checked>
+                        <label class="form-check-label" for="bishkek">Бишкек</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="city" id="almaty">
+                        <label class="form-check-label" for="almaty">Алматы</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 d-flex align-items-end">
+                <button type="button" class="btn btn-primary w-100 py-2 filter-btn">Издөө</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- поиск  end -->
+
+ <!-- BLOK   1-->  
+<div class="container my-5">
+    <h2 class="text-center mb-5">все туры</h2>
+    
+    <div class="row g-4"> 
+        
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="carda shadow-sm">
+                <div class="img-zoom">
+                    <img src="https://kyrtag.kg/upload/iblock/1ab/1ab6e49ca103335dc1ac44d14fc2673a.jpg" alt="Арстанбап">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Арстанбап</h5>
+                    <div class="tour-info">
+                        <span class="info-item">📍 Жалал-Абад</span>
+                        <span class="info-item">📅⠀2026⠀⠀15-май</span>
+                    </div>
+                    <p class="price">3 500 COM</p>
+                    <a href="" class="tour-btn">Подробнее</a>
                 </div>
             </div>
         </div>
-     
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="carda shadow-sm">
+                <div class="img-zoom">
+                    <img src="https://kg.kabar.kg/site/assets/files/128100/sequence_02_00_03_34_06_still005.jpg" alt="Сары-Челек">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Сары-Челек</h5>
+                    <div class="tour-info">
+                        <span class="info-item">📍 Жалал-Абад</span>
+                        <span class="info-item">📅⠀2026:⠀⠀20-июнь</span>
+                    </div>
+                    <p class="price">5 000 COM</p>
+                    <a href="" class="tour-btn">Подробнее</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="carda shadow-sm">
+                <div class="img-zoom">
+                    <img src="https://www.kovinov.com/biblioteka/gory-mira/gimalai.jpg" alt="Дубай">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">ОАЭ (Дубай)</h5>
+                    <div class="tour-info">
+                        <span class="info-item">📍 Дубай</span>
+                        <span class="info-item">📅⠀2026:⠀⠀10-июль</span>
+                    </div>
+                    <p class="price">55 000 COM</p>
+                    <a href="" class="tour-btn">Подробнее</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="carda shadow-sm">
+                <div class="img-zoom">
+                    <img src="https://sputnik.kg/img/102080/70/1020807064_0:0:3888:2592_600x0_80_0_1_5077b09cafb558b3ad259ab169eb769e.jpg" alt="Таиланд">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Таиланд</h5>
+                    <div class="tour-info">
+                        <span class="info-item">📍 Пхукет</span>
+                        <span class="info-item">📅⠀2026⠀⠀ 05-август</span>
+                    </div>
+                    <p class="price">48 000 COM</p>
+                    <a href="" class="tour-btn">Подробнее</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
-</div>
-<!-- slider  end 2 --> 
+
+<!-- BLOK  start 2--> 
+<div class="container my-5">         
+    <div class="row g-4">             
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="carda shadow-sm">
+                        <div class="img-zoom">
+                            <img src="https://kyrtag.kg/upload/iblock/1ab/1ab6e49ca103335dc1ac44d14fc2673a.jpg" alt="Арстанбап">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Арстанбап</h5>
+                            <div class="tour-info">
+                                <span class="info-item">📍 Жалал-Абад</span>
+                                <span class="info-item">📅⠀2026⠀⠀15-май</span>
+                            </div>
+                            <p class="price">3 500 COM</p>
+                            <a href="" class="tour-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="carda shadow-sm">
+                        <div class="img-zoom">
+                            <img src="https://kg.kabar.kg/site/assets/files/128100/sequence_02_00_03_34_06_still005.jpg" alt="Сары-Челек">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Сары-Челек</h5>
+                            <div class="tour-info">
+                                <span class="info-item">📍 Жалал-Абад</span>
+                                <span class="info-item">📅⠀2026:⠀⠀20-июнь</span>
+                            </div>
+                            <p class="price">5 000 COM</p>
+                            <a href="" class="tour-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="carda shadow-sm">
+                        <div class="img-zoom">
+                            <img src="https://www.kovinov.com/biblioteka/gory-mira/gimalai.jpg" alt="Дубай">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">ОАЭ (Дубай)</h5>
+                            <div class="tour-info">
+                                <span class="info-item">📍 Дубай</span>
+                                <span class="info-item">📅⠀2026:⠀⠀10-июль</span>
+                            </div>
+                            <p class="price">55 000 COM</p>
+                            <a href="" class="tour-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="carda shadow-sm">
+                        <div class="img-zoom">
+                            <img src="https://sputnik.kg/img/102080/70/1020807064_0:0:3888:2592_600x0_80_0_1_5077b09cafb558b3ad259ab169eb769e.jpg" alt="Таиланд">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Таиланд</h5>
+                            <div class="tour-info">
+                                <span class="info-item">📍 Пхукет</span>
+                                <span class="info-item">📅⠀2026⠀⠀ 05-август</span>
+                            </div>
+                            <p class="price">48 000 COM</p>
+                            <a href="" class="tour-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="all-tour">
+                <a href="all-tours.html" class="tour-btn">«Просмотреть все туры»</a>
+            </div>
+        </div>
+<!-- BLOK  end 2 --> 
 
 
 <!-- down туйундогу кара  -->
-<footer class="footer">
+<footer class="footer mt-5">
     <div class="container">
-
-        <div class="footer-grid">
-
-            <!-- Contact -->
-            <div>
-                <h3>Контакты</h3>
-                <a href="#"> <p>📞 +996 700 00 00 00</p></a>
-                <a href="#"> <p>📞 +996 555 00 00 00</p></a>
-                <a href="#"> <p>✉ info@gmail.com</p></a>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h3 class="logo-footer">Manas Travel</h3>
+                <p>Жалал-Абад шаарындагы эң ишенимдүү туристтик агенттик. Биз сиздин эс алууңузду унутулгус кылабыз.</p>
             </div>
-
-            <!-- Certificates -->
-            <div>
-                <h3>Book with confidence</h3>
-                <p class="small-text">
-                    We are certified and trusted travel company.
-                </p>
-
-                <div class="certificates">
-                    <img src="cert1.png">
-                    <img src="cert2.png">
-                    <img src="cert3.png">
+            <div class="col-md-4 mb-4">
+                <h5>Байланыш</h5>
+                <p>📞 +996 553 414 929</p>
+                <p>📍 Жалал-Абад ш., Ленин көчөсү</p>
+                <p>✉ info@almazbekov__2</p>
+            </div>
+            <div class="col-md-4 mb-4 text-center">
+                <h5>Биз социалдык тармактарда</h5>
+                <div class="d-flex justify-content-center gap-3 mt-3">
+                    <span class="fs-3">Instagram</span>
                 </div>
             </div>
-
-            <!-- About -->
-            <div>
-                <h3>About</h3>
-                <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms and condition</a></li>
-                </ul>
-            </div>
-
         </div>
-
         <hr>
-
-        <p class="copyright">
-            © 2026 Your Company Name
-        </p>
-
+        <p class="text-center opacity-50 small">© 2026 Manas Travel. Бардык укуктар корголгон.</p>
     </div>
 </footer>
 <!-- down туйундогу кара   end-->
